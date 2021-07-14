@@ -3,11 +3,13 @@ const express = require("express");
 const mysql = require("mysql");
 require("dotenv").config();
 
+
+
 const pool = mysql.createPool({
   connectionLimit: 10,
   host: "",
-  user: "",
-  password: "",
+  user: "admin",
+  password: "password",
   database: "",
 });
 
